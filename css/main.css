@@ -1,0 +1,285 @@
+body {
+  background-image: linear-gradient(to right top, #090307, #2a282a, #4b494c, #6e6d71, #949498, #939598, #939598, #939698, #6d7071, #4a4c4d, #292b2b, #080909);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* Llamamos el mixin */
+  padding: 15px;
+}
+nav img {
+  margin-top: 30px;
+  padding-left: 30px;
+  height: 150px;
+  width: 340px;
+}
+nav .icons {
+  display: flex;
+  gap: 15px;
+  /* Asi se crea un mixin */
+  /* Esta es la forma de utilizar el mixin*/
+  margin-right: 50px;
+}
+nav .icons button {
+  background: none;
+  border-style: none;
+}
+
+article {
+  width: auto;
+  color: #ffffff;
+  padding-left: 45px;
+  padding-right: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+article .impact-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 25px;
+}
+article h1 {
+  font-size: 3em;
+  padding: 0px;
+  margin: 0px;
+  color: #d11004;
+}
+article p {
+  font-size: 1.5em;
+}
+article button {
+  color: #ffffff;
+  width: 12vw;
+  padding: 20px;
+  background: none;
+  border-color: #d11004;
+  font-size: 1em;
+}
+article img {
+  margin-top: 70px;
+  width: 450px;
+  height: 300px;
+  border-radius: 19px;
+}
+
+section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #d11004;
+  font-size: 2em;
+}
+section .characters, section .titans {
+  padding-bottom: 60px;
+}
+section .characters h2, section .titans h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+section .characters .card-section, section .titans .card-section {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  row-gap: 80px;
+}
+section .characters .card-section .character-card, section .titans .card-section .character-card {
+  width: 14vw;
+  height: auto;
+  padding: 20px;
+  border-radius: 8px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+section .characters .card-section .character-card .levi, section .titans .card-section .character-card .levi {
+  margin-top: 52px;
+}
+section .characters .card-section .character-card .icon, section .titans .card-section .character-card .icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+section .characters .card-section .character-card .icon img, section .titans .card-section .character-card .icon img {
+  width: 33px;
+  height: 33px;
+  transition: all 300ms;
+}
+section .characters .card-section .character-card .icon img:hover, section .titans .card-section .character-card .icon img:hover {
+  transform: scale(1.7);
+}
+section .characters .card-section .character-card .icon-levi, section .titans .card-section .character-card .icon-levi {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+section .characters .card-section .character-card .icon-levi img, section .titans .card-section .character-card .icon-levi img {
+  width: 33px;
+  height: 33px;
+  transition: all 300ms;
+}
+section .characters .card-section .character-card .icon-levi img:hover, section .titans .card-section .character-card .icon-levi img:hover {
+  transform: scale(1.7);
+}
+section .characters .card-section .character-card .img-chart, section .titans .card-section .character-card .img-chart {
+  width: 120px;
+  height: auto;
+  margin-left: 30px;
+  transition: all 300ms;
+}
+section .characters .card-section .character-card .img-chart:hover, section .titans .card-section .character-card .img-chart:hover {
+  transform: scale(1.18);
+}
+section .characters .card-section h3, section .titans .card-section h3 {
+  color: #d11004;
+}
+section .characters .card-section p, section .titans .card-section p {
+  color: #ffffff;
+}
+section .titans .card-section {
+  -moz-column-gap: 130px;
+       column-gap: 130px;
+}
+section .titans .card-section .character-image .img-chart {
+  height: 200px;
+  width: auto;
+  border-radius: 3px;
+}
+section .titans .icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+section .titans .icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.about-us {
+  padding-bottom: 60px;
+}
+.about-us h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.about-us .band-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-us .band-section .paradis, .about-us .band-section .marley {
+  width: 40vw;
+  display: flex;
+  gap: 40px;
+  color: #ffffff;
+}
+.about-us .band-section .paradis img, .about-us .band-section .marley img {
+  height: 230px;
+  width: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  transition: all 300ms;
+}
+.about-us .band-section .paradis img:hover, .about-us .band-section .marley img:hover {
+  transform: scale(1.1);
+}
+.about-us .band-section .paradis p, .about-us .band-section .marley p {
+  font-size: 1.1em;
+  text-align: justify;
+}
+.army h2 {
+  padding-bottom: 60px;
+}
+.army .army-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.army .army-section img {
+  width: 20vw;
+  height: 40vh;
+  transition: all 300ms;
+}
+.army .army-section img:hover {
+  transform: scale(1.1);
+}
+.army .army-section .trop-section h3 {
+  color: #ffffff;
+  margin-left: 40px;
+}
+.army .army-section .trop-section .title {
+  margin-left: 70px;
+}
+
+.location h2 {
+  padding-bottom: 50px;
+  padding-top: 60px;
+}
+.location .map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.location .map img {
+  height: 600px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.location h3 {
+  margin-left: 320px;
+  color: #ffffff;
+}
+
+footer {
+  height: auto;
+  color: #d11004;
+  padding: 40px;
+}
+footer h3 {
+  font-size: 2em;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+footer a:hover {
+  color: #d11004;
+}
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 30px;
+}
+footer .social-media a img:hover {
+  color: #6f6f6f;
+}/*# sourceMappingURL=main.css.map */
